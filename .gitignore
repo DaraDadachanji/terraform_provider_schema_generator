@@ -1,0 +1,13 @@
+#editor files
+.idea
+.vscode
+
+#mac files
+.DS_Store
+
+#terraform
+.terraform*
+.terraform
+
+#artifacts
+*.json
