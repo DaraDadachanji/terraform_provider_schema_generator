@@ -21,7 +21,9 @@ terraform {
 }
 ```
 
-then run `run.sh` to generate and move the schemas
+Then run `main.sh` to generate and move the schemas
+
+You may need to restart IntelliJ for it to take effect
 
 ## How it works
 
@@ -88,8 +90,6 @@ The same is true of the resource schemas and data_source schemas
 ### Loading the generated schemas
 
 The terraform plugin expects the schemas at `~/.terraform.d/schemas`
-
-You may need to restart IntelliJ for it to take effect
 
 ## Extras
 

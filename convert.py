@@ -5,13 +5,26 @@ import re
 Instructions:
 
 1. Create a file called providers.tf and add any providers you want to use
+    to the file. For example:
+    ```
+    terraform {
+        required_providers {
+            snowflake = {
+                source  = "Snowflake-Labs/snowflake"
+                version = "0.71.0"
+            }
+        }
+    }
+    ```
 2. Run `terraform init` to download the providers
 3. Run `terraform providers schema -json > schema.json` to get the raw schema
-4. Run this script to convert the raw schema to the format 
+4. Create a folder named "schemas" in the same directory as this script `mkdir schemas`
+5. Run this script to convert the raw schema to the format 
     expected by the terraform plugin sdk
-5. Copy the generated files to the schemas directory 
+6. Create the schemas directory for the terraform plugin 
+    `mkdir -p "$HOME/.terraform.d/schemas/"`
+7. Copy the generated files to the schemas directory 
     `cp -r schemas/ "$HOME/.terraform.d/schemas/`
-
 """
 
 def main():
