@@ -1,5 +1,9 @@
 # Terraform Plugin Schemas
 
+The terraform plugin in IntelliJ relies on schemas for providers
+to provide suggestions. For community created plugins you have to generate
+these schemas yourself. This repository helps you do so
+
 ## Instructions
 
 add providers to providers.tf
