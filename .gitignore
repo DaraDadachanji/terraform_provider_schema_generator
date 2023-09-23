@@ -10,4 +10,5 @@
 .terraform
 
 #artifacts
+__pycache__
 *.json
