@@ -13,8 +13,7 @@
     "properties": {
         ".schema_version": {
             "type": "string",
-            "enum": ["2"],
-            
+            "enum": ["2"]
         },
         ".sdk_type": {
             "type": "string",

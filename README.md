@@ -86,3 +86,9 @@ The same is true of the resource schemas and data_source schemas
 The terraform plugin expects the schemas at `~/.terraform.d/schemas`
 
 You may need to restart IntelliJ for it to take effect
+
+## Extras
+
+`providers.tf` contains a sample for the snowflake plugin
+
+`providers.schema.json` can be used to validate your schema output if you choose to do the conversion some other way
