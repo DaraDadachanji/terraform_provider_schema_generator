@@ -11,4 +11,5 @@
 
 #artifacts
 __pycache__
-*.json
+schemas/*
+schema.json
