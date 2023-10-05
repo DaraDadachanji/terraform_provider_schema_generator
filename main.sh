@@ -12,4 +12,4 @@ python3 convert.py
 
 # Copy generated files to terraform schema directory
 mkdir -p "$HOME/.terraform.d/schemas/"
-cp -r schemas/ "$HOME/.terraform.d/schemas/
+cp -r schemas/ "$HOME/.terraform.d/schemas/"
