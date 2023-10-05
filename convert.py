@@ -33,11 +33,10 @@ def main():
     in the format expected by the terraform plugin sdk
     """
     data = _load_data()
-    for provider_id, raw_schema in data['provider_schemas']:
+    for provider_id, raw_schema in data['provider_schemas'].items():
         name = _get_provider_name(provider_id)
         schema = _create_provider_schema(
             raw_schema, 
-            provider_id=provider_id, 
             provider_name=name
         )
         _write_json(schema, provider_name=name)
